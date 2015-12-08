@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.user.shopunterui.Frag_login">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:id="@+id/email_login"
+            android:hint="Email"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/log_pwd"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/pass_login"
+            android:layout_below="@+id/log_email"
+            android:layout_centerHorizontal="true"
+            android:hint="Password" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password ?"
+            android:id="@+id/forgot_Pass"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/log_pwd"
+            android:layout_alignStart="@+id/log_pwd"
+            android:layout_alignEnd="@+id/log_pwd"
+            android:background="@null"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/fgtpwd"
+            android:layout_marginTop="30dp"
+            android:id="@+id/relativeLayout2"
+            android:background="@null"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/btn_login_cancle"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:background="#039be5"
+                android:textColor="#FAFAFA"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/btn_login_done"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="#039be5"
+                android:textColor="#FAFAFA"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="25dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
